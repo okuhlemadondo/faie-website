@@ -1,0 +1,206 @@
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* Intro Section */
+.introSection {
+  padding: 100px 0 60px;
+  background-color: var(--color-cream);
+}
+
+.introText {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introText p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+  font-weight: 300;
+}
+
+/* Services Section */
+.servicesSection {
+  padding: 60px 0 120px;
+  background-color: var(--color-cream);
+}
+
+.serviceRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.serviceRowReverse {
+  direction: rtl;
+}
+
+.serviceRowReverse > * {
+  direction: ltr;
+}
+
+.serviceImageCol {
+  width: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.serviceTextCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.serviceNumber {
+  font-family: var(--font-accent);
+  font-size: 16px;
+  color: var(--color-brown);
+  margin-bottom: 16px;
+}
+
+.serviceTitle {
+  font-size: 28px;
+  color: var(--color-charcoal);
+  margin-bottom: 24px;
+}
+
+.serviceDesc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  opacity: 0.8;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 120px 0;
+  background-color: var(--color-white);
+}
+
+.ctaBox {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--color-cream);
+  padding: 80px 40px;
+  border: 1px solid rgba(43, 43, 43, 0.05);
+}
+
+.ctaTitle {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  color: var(--color-charcoal);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.ctaText {
+  font-size: 16px;
+  color: var(--color-charcoal);
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+/* Process Section */
+.processSection {
+  padding: 120px 0;
+  background-color: var(--color-charcoal);
+  color: var(--color-cream);
+}
+
+.processSection h2 {
+  color: var(--color-cream) !important;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.processStep {
+  text-align: center;
+}
+
+.stepNumber {
+  font-family: var(--font-accent);
+  font-size: 48px;
+  color: var(--color-beige);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-cream);
+  margin-bottom: 16px;
+}
+
+.stepDesc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(247, 244, 238, 0.7);
+}
+
+@media (max-width: 1024px) {
+  .serviceRow {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  
+  .serviceRowReverse {
+    direction: ltr;
+  }
+
+  .processGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+  
+  .introText p {
+    font-size: 16px;
+  }
+  
+  .serviceTitle {
+    font-size: 24px;
+  }
+  
+  .ctaTitle {
+    font-size: 32px;
+  }
+  
+  .ctaBox {
+    padding: 60px 24px;
+  }
+
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,41 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  font-family: var(--font-accent);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  background: transparent;
+  outline: none;
+}
+
+.filled {
+  background-color: var(--color-brown);
+  color: var(--color-cream);
+}
+
+.filled:hover {
+  background-color: var(--color-brown-hover);
+}
+
+.outlined {
+  border-color: var(--color-brown);
+  color: var(--color-brown);
+}
+
+.outlined:hover {
+  background-color: var(--color-brown);
+  color: var(--color-cream);
+}
+
+.white {
+  background-color: var(--color-white);
+  color: var(--color-charcoal);
+}
+
+.white:hover {
+  background-color: var(--color-cream);
+}

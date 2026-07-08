@@ -1,0 +1,127 @@
+.container {
+  max-width: 1200px; /* Narrower for contact */
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.contactSection {
+  padding: 120px 0;
+  background-color: var(--color-cream);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+/* Info Column */
+.infoCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  color: var(--color-charcoal);
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.intro {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  opacity: 0.8;
+  margin-bottom: 48px;
+}
+
+.infoBlock {
+  margin-bottom: 32px;
+}
+
+.infoTitle {
+  font-family: var(--font-accent);
+  font-size: 13px;
+  color: var(--color-brown);
+  margin-bottom: 12px;
+}
+
+.infoLink, .infoText {
+  font-size: 16px;
+  color: var(--color-charcoal);
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.infoLink:hover {
+  color: var(--color-brown);
+  text-decoration: underline;
+}
+
+/* Form Column */
+.formCol {
+  background-color: var(--color-white);
+  padding: 48px;
+  border: 1px solid rgba(43, 43, 43, 0.05);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  color: var(--color-charcoal);
+}
+
+.input, .select, .textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid rgba(43, 43, 43, 0.2);
+  background-color: var(--color-cream);
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-charcoal);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  border-color: var(--color-brown);
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.submitBtn {
+  margin-top: 16px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+  
+  .formCol {
+    padding: 32px 24px;
+  }
+}
