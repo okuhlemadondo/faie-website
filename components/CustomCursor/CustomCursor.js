@@ -7,10 +7,12 @@ export default function CustomCursor() {
   const cursorRef = useRef(null);
   const dotRef = useRef(null);
   const [isHovering, setIsHovering] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
     // Only run on desktop/devices with a pointer
     if (typeof window === 'undefined' || window.matchMedia('(pointer: coarse)').matches) {
+      setIsTouchDevice(true);
       return;
     }
 
@@ -87,6 +89,8 @@ export default function CustomCursor() {
       document.body.classList.remove('has-custom-cursor');
     };
   }, []);
+
+  if (isTouchDevice) return null;
 
   return (
     <>

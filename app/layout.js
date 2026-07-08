@@ -40,7 +40,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth" className={`${bodoniModa.variable} ${manrope.variable} ${abel.variable}`}>
-      <body>
+      <body suppressHydrationWarning>
         {/* Google Analytics — Replace GA_MEASUREMENT_ID with the client's actual ID */}
         {/* 
         <Script

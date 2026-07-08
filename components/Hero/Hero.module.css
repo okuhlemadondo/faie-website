@@ -89,15 +89,17 @@
 
 @media (max-width: 768px) {
   .symbol {
-    width: 100px;
+    width: 80px;
+    margin-bottom: -70px;
   }
   
   .wordmark {
-    max-width: 400px;
+    max-width: 280px;
   }
   
-  .subBrand {
-    font-size: 11px;
-    letter-spacing: 0.2em;
+  .tagline {
+    margin-top: -60px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
   }
 }
