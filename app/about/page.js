@@ -20,9 +20,9 @@ export default function AboutPage() {
         imagePath="/images/stock/luxury-interior.jpg"
       />
 
-      <AnimatedSection className={styles.storySection}>
+      <section className={styles.storySection}>
         <div className={styles.container}>
-          <div className={styles.storyTextContainer}>
+          <AnimatedSection className={styles.storyTextContainer}>
             <div className="animate-up">
               <SectionHeading align="center" subtitle="OUR PHILOSOPHY">
                 Driven by Human Experience
@@ -36,16 +36,15 @@ export default function AboutPage() {
                 We collaborate with interior designers, architects, landscape designers, artisans, and craftspeople to provide a full turnkey design solution. Applying traditional building methods and local craft traditions to new construction and furnishings, we specialize in full-scale renovations, efficient spatial planning, and effective project management. We aim to exceed expectations seamlessly, fusing functionality with exquisite finishes beyond aesthetics.
               </p>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className={styles.founderSection}>
+      <section className={styles.founderSection}>
         <div className={styles.container}>
-          <div className={styles.founderGrid}>
+          <AnimatedSection className={styles.founderGrid}>
             <div className={styles.founderImageColumn}>
               <div className={`${styles.founderImageWrapper} animate-up`}>
-                {/* Placeholder for the founder's image you shared. You can save your image as /public/images/stock/founder.jpg */}
                 <Image 
                   src="/images/stock/founder.png"
                   alt="FAIE Founder"
@@ -70,21 +69,21 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
-      </AnimatedSection>
+      </section>
 
-
-
-      <AnimatedSection className={styles.pillarsSection}>
+      <section className={styles.pillarsSection}>
         <div className={styles.container}>
-          <div className="animate-up">
-            <SectionHeading subtitle="THE THREE PILLARS OF FAIE">
-              Where Form, Function, and Beauty Intertwine
-            </SectionHeading>
-          </div>
+          <AnimatedSection>
+            <div className="animate-up">
+              <SectionHeading subtitle="THE THREE PILLARS OF FAIE">
+                Where Form, Function, and Beauty Intertwine
+              </SectionHeading>
+            </div>
+          </AnimatedSection>
           
-          <div className={styles.pillarsGrid}>
+          <AnimatedSection className={styles.pillarsGrid}>
             <div className={`${styles.pillarCard} animate-up`}>
               <h3 className={`${styles.pillarTitle} tracked-text`}>DESIGN</h3>
               <p className={styles.pillarText}>
@@ -103,9 +102,9 @@ export default function AboutPage() {
                 Timeless, refined, and effortlessly sophisticated. FAIE creates interiors that transcend trends and remain beautiful, functional, and relevant for years to come.
               </p>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
-      </AnimatedSection>
+      </section>
     </>
   );
 }
