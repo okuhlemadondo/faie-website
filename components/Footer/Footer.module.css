@@ -22,9 +22,40 @@
   flex-direction: column;
 }
 
-.logo {
-  object-fit: contain;
-  margin-bottom: 20px;
+.logoGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.symbol {
+  margin-bottom: 12px;
+  width: 70px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.wordmark {
+  margin-bottom: 6px;
+}
+
+.textWordmark {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  padding-left: 0.4em; /* offset for tracking */
+  margin: 0;
+  white-space: nowrap;
+}
+
+.tagline {
+  font-size: 9px;
+  opacity: 0.8;
+  letter-spacing: 0.15em;
+  color: var(--color-cream);
+  text-transform: uppercase;
 }
 
 .socials {
@@ -137,6 +168,10 @@
     grid-column: 1 / -1;
     align-items: center;
     margin-bottom: 20px;
+  }
+  
+  .logoGroup {
+    align-items: center;
   }
   
   .newsletterColumn {

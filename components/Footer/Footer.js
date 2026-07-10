@@ -21,13 +21,19 @@ export default function Footer() {
         <div className={styles.topSection}>
           {/* Logo & Socials */}
           <div className={styles.brandColumn}>
-            <Image 
-              src="/images/logos/logo-white.png" 
-              alt="FAIE" 
-              width={180} 
-              height={140}
-              className={styles.logo}
-            />
+            <div className={styles.logoGroup}>
+              <Image 
+                src="/images/logos/symbol-white.png" 
+                alt="FAIE" 
+                width={70} 
+                height={70}
+                className={styles.symbol}
+              />
+              <div className={styles.wordmark}>
+                <span className={styles.textWordmark}>FAIE</span>
+              </div>
+              <p className={styles.tagline}>DESIGN &middot; DETAIL &middot; ELEGANCE</p>
+            </div>
             <div className={styles.socials}>
               <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
               <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
