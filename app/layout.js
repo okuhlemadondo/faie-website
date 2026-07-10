@@ -11,6 +11,8 @@ import { ToastProvider } from '@/components/ui/Toast';
 import CookieConsent from '@/components/CookieConsent/CookieConsent';
 import Script from 'next/script';
 
+import ScrollRestoration from '@/components/ScrollRestoration/ScrollRestoration';
+
 export const metadata = {
   title: 'FAIE | Design · Detail · Elegance',
   description: 'Luxury interiors thoughtfully designed to combine timeless elegance, functionality and refined craftsmanship.',
@@ -63,6 +65,7 @@ export default function RootLayout({ children }) {
           <WishlistProvider>
             <ToastProvider>
               <SmoothScrolling>
+                <ScrollRestoration />
                 <CustomCursor />
                 <Navbar />
                 <PageMotion>
