@@ -5,6 +5,11 @@ import { getAllCategories, getProductsByCategory } from '@/lib/data';
 import { useState, useMemo } from 'react';
 import styles from './page.module.css';
 
+export const metadata = {
+  title: 'Shop | FAIE',
+  description: 'Curated luxury furniture and home accessories.',
+};
+
 export default function ShopPage() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');

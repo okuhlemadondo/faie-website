@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Shop | FAIE Consulting',
+  title: 'Shop | FAIE',
   description: 'Browse our curated collection of luxury furniture and design pieces, handcrafted with exceptional materials.',
 };
 

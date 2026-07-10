@@ -4,8 +4,8 @@ import styles from './page.module.css';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About | FAIE Consulting',
-  description: 'Learn more about FAIE Consulting, our history, and our core values.',
+  title: 'About | FAIE',
+  description: 'Learn more about FAIE, our history, and our core values.',
 };
 
 const values = [
@@ -34,7 +34,7 @@ export default function AboutPage() {
               </SectionHeading>
               <div className={styles.content}>
                 <p>
-                  FAIE Consulting is a luxury interior design consultancy dedicated to creating refined, purposeful, and timeless spaces. Through thoughtful design, meticulous attention to detail, and a client-centred approach, we transform environments into elevated experiences that inspire how people live, work, and connect.
+                  FAIE is a luxury interior design consultancy dedicated to creating refined, purposeful, and timeless spaces. Through thoughtful design, meticulous attention to detail, and a client-centred approach, we transform environments into elevated experiences that inspire how people live, work, and connect.
                 </p>
                 <p>
                   We believe thoughtfully designed spaces have the power to elevate experiences, improve wellbeing, and inspire meaningful living.
@@ -63,7 +63,7 @@ export default function AboutPage() {
           </SectionHeading>
           <div className={styles.founderContent}>
             <p>
-              FAIE Consulting was founded on the belief that exceptional design should be accessible, personal, and transformative. With a background rooted in architecture, spatial planning, and a deep appreciation for craftsmanship, our founder set out to create a consultancy that bridges the gap between aspiration and reality.
+              FAIE was founded on the belief that exceptional design should be accessible, personal, and transformative. With a background rooted in architecture, spatial planning, and a deep appreciation for craftsmanship, our founder set out to create a consultancy that bridges the gap between aspiration and reality.
             </p>
             <p>
               Every project at FAIE begins with a conversation — understanding not just what a space should look like, but how it should feel. This human-centred philosophy is woven into every decision, from the first sketch to the final styling detail.

@@ -12,13 +12,13 @@ import CookieConsent from '@/components/CookieConsent/CookieConsent';
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'FAIE Consulting | Design · Detail · Elegance',
+  title: 'FAIE | Design · Detail · Elegance',
   description: 'Luxury interiors thoughtfully designed to combine timeless elegance, functionality and refined craftsmanship.',
   openGraph: {
-    title: 'FAIE Consulting | Luxury Interiors',
+    title: 'FAIE | Luxury Interiors',
     description: 'Luxury interiors thoughtfully designed to combine timeless elegance, functionality and refined craftsmanship.',
-    url: 'https://faieconsulting.co.za',
-    siteName: 'FAIE Consulting',
+    url: 'https://faie.co.za',
+    siteName: 'FAIE',
     images: [
       {
         url: '/images/stock/luxury-interior.jpg',
@@ -31,7 +31,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FAIE Consulting',
+    title: 'FAIE',
     description: 'Luxury interior design and bespoke furniture.',
     images: ['/images/stock/luxury-interior.jpg'],
   },

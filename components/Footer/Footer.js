@@ -23,7 +23,7 @@ export default function Footer() {
           <div className={styles.brandColumn}>
             <Image 
               src="/images/logos/logo-white.png" 
-              alt="FAIE Consulting" 
+              alt="FAIE" 
               width={180} 
               height={140}
               className={styles.logo}
@@ -90,7 +90,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className={styles.bottomBar}>
-          <p>© 2026 FAIE Consulting. All rights reserved.</p>
+          <p>© 2026 FAIE. All rights reserved.</p>
           <p>Design by <strong>AETHER</strong></p>
         </div>
       </div>

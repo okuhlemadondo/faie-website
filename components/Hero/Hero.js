@@ -29,12 +29,19 @@ export default function Hero() {
       0.45
     );
 
+    // Character stagger for the FAIE wordmark
+    tl.fromTo(root.querySelectorAll('.char'),
+      { y: 40, opacity: 0, rotateX: -90 },
+      { y: 0, opacity: 1, rotateX: 0, duration: 1.2, stagger: 0.15, ease: 'back.out(1.5)' },
+      0.8
+    );
+
   });
 
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (!container.current) return;
-      const wordmark = container.current.querySelector(`.${styles.wordmark}`);
+      const wordmark = container.current.querySelector(`.${styles.textWordmark}`);
       if (!wordmark) return;
       
       const xPos = (e.clientX / window.innerWidth - 0.5) * 2;
@@ -79,14 +86,13 @@ export default function Hero() {
               className={styles.symbol}
             />
           </div>
-          <div className="animate-up">
-            <Image
-              src="/images/logos/wordmark-white.png"
-              alt="FAIE Consulting"
-              width={500}
-              height={140}
-              className={styles.wordmark}
-            />
+          <div className="wordmark-container">
+            <h1 className={`${styles.textWordmark} tracked-text`}>
+              <span className="char" style={{ display: 'inline-block' }}>F</span>
+              <span className="char" style={{ display: 'inline-block' }}>A</span>
+              <span className="char" style={{ display: 'inline-block' }}>I</span>
+              <span className="char" style={{ display: 'inline-block' }}>E</span>
+            </h1>
           </div>
         </div>
 
@@ -95,8 +101,8 @@ export default function Hero() {
         </div>
 
         <div className="animate-up">
-          <Button variant="white" className={styles.cta}>
-            BOOK A CONSULTATION
+          <Button variant="white" href="/shop" className={styles.cta}>
+            SHOP NOW
           </Button>
         </div>
       </div>

@@ -140,12 +140,12 @@ export default function PageMotion({ children }) {
       </div>
 
       {introStage !== 'done' && (
-        <div className={styles.introOverlay} data-stage={introStage} role="status" aria-label="Loading FAIE Consulting">
+        <div className={styles.introOverlay} data-stage={introStage} role="status" aria-label="Loading FAIE">
           <div className={styles.introStack}>
             <div className={styles.threadMark} aria-hidden="true">
               <span className={styles.threadDot}></span>
             </div>
-            <img className={styles.wordmark} src="/images/logos/wordmark-black.svg" alt="FAIE Consulting" />
+            <h1 className={`${styles.textWordmark} tracked-text`}>FAIE</h1>
           </div>
         </div>
       )}

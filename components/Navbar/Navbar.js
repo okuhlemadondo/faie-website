@@ -29,7 +29,6 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Shop', path: '/shop' },
-    { name: 'Services', path: '/services' },
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'Contact', path: '/contact' },
     { name: 'About', path: '/about' },
@@ -42,10 +41,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className={styles.logo}>
             <Image 
-              src="/images/logos/emblem-black.svg" 
-              alt="FAIE Consulting" 
-              width={45} 
-              height={45}
+              src="/images/logos/symbol-black.png" 
+              alt="FAIE" 
+              width={32} 
+              height={32}
               priority
             />
           </Link>

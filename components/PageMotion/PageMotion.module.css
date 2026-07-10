@@ -105,9 +105,14 @@
   transform: translate(-50%, -50%);
 }
 
-.wordmark {
-  width: clamp(210px, 28vw, 330px);
-  height: auto;
+.textWordmark {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  padding-left: 0.4em;
+  color: var(--color-charcoal);
+  margin: 0;
   opacity: 0;
   transform: translateY(10px);
   animation: wordmarkIn 620ms cubic-bezier(0.22, 1, 0.36, 1) 620ms forwards;
@@ -300,8 +305,8 @@
     width: 118px;
   }
 
-  .wordmark {
-    width: min(68vw, 260px);
+  .textWordmark {
+    font-size: 32px;
   }
 
   .curtainMark {
@@ -319,7 +324,7 @@
   .threadMark::before,
   .threadMark::after,
   .threadDot,
-  .wordmark,
+  .textWordmark,
   .routeCovering,
   .routeRevealing,
   .curtainMark {
@@ -334,7 +339,7 @@
     display: none;
   }
 
-  .wordmark {
+  .textWordmark {
     opacity: 1;
     transform: none;
   }
