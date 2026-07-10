@@ -98,9 +98,10 @@
   }
   
   .textWordmark {
-    font-size: 64px;
+    font-size: clamp(40px, 12vw, 64px);
     letter-spacing: 0.3em;
     padding-left: 0.3em;
+    white-space: nowrap;
   }
   
   .tagline {
@@ -119,4 +120,8 @@
   text-align: center;
   margin: 0;
   will-change: transform, opacity;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }

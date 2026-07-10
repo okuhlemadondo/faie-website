@@ -88,10 +88,9 @@ export default function Hero() {
           </div>
           <div className="wordmark-container">
             <h1 className={`${styles.textWordmark} tracked-text`}>
-              <span className="char" style={{ display: 'inline-block' }}>F</span>
-              <span className="char" style={{ display: 'inline-block' }}>A</span>
-              <span className="char" style={{ display: 'inline-block' }}>I</span>
-              <span className="char" style={{ display: 'inline-block' }}>E</span>
+              {'FAIE'.split('').map((char, i) => (
+                <span key={i} className="char" style={{ display: 'inline-block' }}>{char}</span>
+              ))}
             </h1>
           </div>
         </div>
