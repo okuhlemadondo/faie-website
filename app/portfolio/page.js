@@ -89,30 +89,32 @@ export default function PortfolioPage() {
         imagePath="/images/stock/vision-interior.jpg"
       />
 
-      <AnimatedSection className={styles.servicesSection}>
+      <section className={styles.servicesSection}>
         <div className={styles.container}>
           {services.map((service, index) => (
-            <div key={service.id} className={`${styles.serviceRow} ${index % 2 !== 0 ? styles.serviceRowReverse : ''} animate-up`}>
-              <div className={styles.serviceImageCol}>
-                <div className={styles.imageWrapper}>
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className={styles.image}
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
+            <AnimatedSection key={service.id}>
+              <div className={`${styles.serviceRow} ${index % 2 !== 0 ? styles.serviceRowReverse : ''}`}>
+                <div className={`${styles.serviceImageCol} animate-up`}>
+                  <div className={styles.imageWrapper}>
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className={styles.image}
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                  </div>
+                </div>
+                <div className={`${styles.serviceTextCol} animate-up`}>
+                  <span className={styles.serviceNumber}>{service.id}.</span>
+                  <h2 className={`${styles.serviceTitle} tracked-text`}>{service.title}</h2>
+                  <p className={styles.serviceDesc}>{service.description}</p>
                 </div>
               </div>
-              <div className={styles.serviceTextCol}>
-                <span className={styles.serviceNumber}>{service.id}.</span>
-                <h2 className={`${styles.serviceTitle} tracked-text`}>{service.title}</h2>
-                <p className={styles.serviceDesc}>{service.description}</p>
-              </div>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
-      </AnimatedSection>
+      </section>
 
       <AnimatedSection className={styles.portfolioSection}>
         <div className={styles.container}>

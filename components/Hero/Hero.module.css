@@ -113,7 +113,7 @@
   }
   
   .textWordmark {
-    font-size: clamp(36px, 20vw, 64px);
+    font-size: clamp(36px, 25vw, 96px);
     letter-spacing: 0.2em;
     padding-left: 0.2em;
     white-space: nowrap;
