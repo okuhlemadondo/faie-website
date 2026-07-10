@@ -87,30 +87,6 @@
   margin-top: 8px;
 }
 
-@media (max-width: 768px) {
-  .symbol {
-    width: 80px;
-    margin-bottom: 15px;
-  }
-  
-  .wordmark {
-    max-width: 280px;
-  }
-  
-  .textWordmark {
-    font-size: clamp(32px, 10vw, 56px);
-    letter-spacing: 0.15em;
-    padding-left: 0.15em;
-    white-space: nowrap;
-  }
-  
-  .tagline {
-    margin-top: 20px;
-    font-size: 10px;
-    letter-spacing: 0.1em;
-  }
-}
-
 .textWordmark {
   font-family: var(--font-heading);
   font-size: 96px;
@@ -124,4 +100,28 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .symbol {
+    width: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .wordmark {
+    max-width: 280px;
+  }
+  
+  .textWordmark {
+    font-size: clamp(36px, 20vw, 64px);
+    letter-spacing: 0.2em;
+    padding-left: 0.2em;
+    white-space: nowrap;
+  }
+  
+  .tagline {
+    margin-top: 20px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
 }
