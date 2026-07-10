@@ -130,24 +130,23 @@
   border-top: 1px solid rgba(43, 43, 43, 0.05);
 }
 
-.founderContent {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.founderGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
 }
 
-.founderContent p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: var(--color-charcoal);
-  opacity: 0.85;
+.founderImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) {
-  .grid {
+  .grid, .founderGrid {
     grid-template-columns: 1fr;
     gap: 60px;
   }

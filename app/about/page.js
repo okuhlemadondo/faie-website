@@ -29,15 +29,15 @@ export default function AboutPage() {
         <div className={styles.container}>
           <div className={styles.grid}>
             <div className={styles.textColumn}>
-              <SectionHeading align="left" subtitle="WHO WE ARE">
-                A Luxury Interior Design Consultancy
+              <SectionHeading align="left" subtitle="OUR PHILOSOPHY">
+                Driven by Human Experience
               </SectionHeading>
               <div className={styles.content}>
                 <p>
-                  FAIE is a luxury interior design consultancy dedicated to creating refined, purposeful, and timeless spaces. Through thoughtful design, meticulous attention to detail, and a client-centred approach, we transform environments into elevated experiences that inspire how people live, work, and connect.
+                  Established in 2020, FAIE is a 100% black female-owned and managed multidisciplinary firm providing professional services in the interior design and project management environment. We work comprehensively, driven by human experience, compelling narratives, and a belief in the profound power of beauty—style and substance working in tandem to nurture a well-lived life.
                 </p>
                 <p>
-                  We believe thoughtfully designed spaces have the power to elevate experiences, improve wellbeing, and inspire meaningful living.
+                  We collaborate with interior designers, architects, landscape designers, artisans, and craftspeople to provide a full turnkey design solution. Applying traditional building methods and local craft traditions to new construction and furnishings, we specialize in full-scale renovations, efficient spatial planning, and effective project management. We aim to exceed expectations seamlessly, fusing functionality with exquisite finishes beyond aesthetics.
                 </p>
               </div>
             </div>
@@ -58,16 +58,32 @@ export default function AboutPage() {
 
       <section className={styles.founderSection}>
         <div className={styles.container}>
-          <SectionHeading subtitle="THE FOUNDER">
-            A Passion for Purposeful Design
-          </SectionHeading>
-          <div className={styles.founderContent}>
-            <p>
-              FAIE was founded on the belief that exceptional design should be accessible, personal, and transformative. With a background rooted in architecture, spatial planning, and a deep appreciation for craftsmanship, our founder set out to create a consultancy that bridges the gap between aspiration and reality.
-            </p>
-            <p>
-              Every project at FAIE begins with a conversation — understanding not just what a space should look like, but how it should feel. This human-centred philosophy is woven into every decision, from the first sketch to the final styling detail.
-            </p>
+          <div className={styles.founderGrid}>
+            <div className={styles.founderImageColumn}>
+              <div className={styles.founderImageWrapper}>
+                {/* Placeholder for the founder's image you shared. You can save your image as /public/images/stock/founder.jpg */}
+                <Image 
+                  src="/images/stock/founder.png"
+                  alt="FAIE Founder"
+                  fill
+                  className={styles.image}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </div>
+            <div className={styles.founderTextColumn}>
+              <SectionHeading align="left" subtitle="THE FOUNDER">
+                A Passion for Purposeful Design
+              </SectionHeading>
+              <div className={styles.content}>
+                <p>
+                  FAIE was founded on the belief that exceptional design should be accessible, personal, and transformative. With a background rooted in architecture, spatial planning, and a deep appreciation for craftsmanship, our founder set out to create a firm that bridges the gap between aspiration and reality.
+                </p>
+                <p>
+                  Every project at FAIE begins with a conversation — understanding not just what a space should look like, but how it should feel. This human-centred philosophy is woven into every decision, from the first sketch to the final styling detail.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
