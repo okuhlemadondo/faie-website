@@ -8,13 +8,7 @@ export const metadata = {
   description: 'Learn more about FAIE, our history, and our core values.',
 };
 
-const values = [
-  { id: '01', title: 'Timeless Elegance', desc: 'We create spaces that transcend trends, delivering enduring beauty that remains relevant and refined for years to come.' },
-  { id: '02', title: 'Intentional Design', desc: 'Every element serves a purpose. We approach each project with deliberate thought, ensuring form and function work in harmony.' },
-  { id: '03', title: 'Exceptional Craftsmanship', desc: 'We partner with master artisans and source the finest materials to ensure every detail meets the highest standards of quality.' },
-  { id: '04', title: 'Client-Centred Collaboration', desc: 'Your vision drives our process. We listen deeply, communicate openly, and design spaces that are uniquely yours.' },
-  { id: '05', title: 'Attention To Detail', desc: 'From material selection to spatial flow, no element is overlooked. It is in the details that luxury truly lives.' },
-];
+
 
 export default function AboutPage() {
   return (
@@ -27,30 +21,17 @@ export default function AboutPage() {
 
       <section className={styles.storySection}>
         <div className={styles.container}>
-          <div className={styles.grid}>
-            <div className={styles.textColumn}>
-              <SectionHeading align="left" subtitle="OUR PHILOSOPHY">
-                Driven by Human Experience
-              </SectionHeading>
-              <div className={styles.content}>
-                <p>
-                  Established in 2020, FAIE is a 100% black female-owned and managed multidisciplinary firm providing professional services in the interior design and project management environment. We work comprehensively, driven by human experience, compelling narratives, and a belief in the profound power of beauty—style and substance working in tandem to nurture a well-lived life.
-                </p>
-                <p>
-                  We collaborate with interior designers, architects, landscape designers, artisans, and craftspeople to provide a full turnkey design solution. Applying traditional building methods and local craft traditions to new construction and furnishings, we specialize in full-scale renovations, efficient spatial planning, and effective project management. We aim to exceed expectations seamlessly, fusing functionality with exquisite finishes beyond aesthetics.
-                </p>
-              </div>
-            </div>
-            <div className={styles.imageColumn}>
-              <div className={styles.imageWrapper}>
-                <Image 
-                  src="/images/stock/hero-kitchen.jpg"
-                  alt="FAIE Interior"
-                  fill
-                  className={styles.image}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+          <div className={styles.storyTextContainer}>
+            <SectionHeading align="center" subtitle="OUR PHILOSOPHY">
+              Driven by Human Experience
+            </SectionHeading>
+            <div className={styles.storyContent}>
+              <p>
+                Established in 2020, FAIE is a 100% black female-owned and managed multidisciplinary firm providing professional services in the interior design and project management environment. We work comprehensively, driven by human experience, compelling narratives, and a belief in the profound power of beauty—style and substance working in tandem to nurture a well-lived life.
+              </p>
+              <p>
+                We collaborate with interior designers, architects, landscape designers, artisans, and craftspeople to provide a full turnkey design solution. Applying traditional building methods and local craft traditions to new construction and furnishings, we specialize in full-scale renovations, efficient spatial planning, and effective project management. We aim to exceed expectations seamlessly, fusing functionality with exquisite finishes beyond aesthetics.
+              </p>
             </div>
           </div>
         </div>
@@ -88,23 +69,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className={styles.valuesSection}>
-        <div className={styles.container}>
-          <SectionHeading subtitle="OUR CORE VALUES">
-            The Principles That Guide Us
-          </SectionHeading>
-          
-          <div className={styles.valuesGrid}>
-            {values.map((value) => (
-              <div key={value.id} className={styles.valueCard}>
-                <span className={styles.valueNumber}>{value.id}.</span>
-                <h3 className={styles.valueTitle}>{value.title}</h3>
-                <p className={styles.valueDesc}>{value.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section className={styles.pillarsSection}>
         <div className={styles.container}>
