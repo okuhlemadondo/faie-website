@@ -1,5 +1,6 @@
 'use client';
 import PageHeader from '@/components/ui/PageHeader';
+import AnimatedSection from '@/components/ui/AnimatedSection';
 import Image from 'next/image';
 import { useState } from 'react';
 import Button from '@/components/ui/Button';
@@ -88,10 +89,10 @@ export default function PortfolioPage() {
         imagePath="/images/stock/vision-interior.jpg"
       />
 
-      <section className={styles.servicesSection}>
+      <AnimatedSection className={styles.servicesSection}>
         <div className={styles.container}>
           {services.map((service, index) => (
-            <div key={service.id} className={`${styles.serviceRow} ${index % 2 !== 0 ? styles.serviceRowReverse : ''}`}>
+            <div key={service.id} className={`${styles.serviceRow} ${index % 2 !== 0 ? styles.serviceRowReverse : ''} animate-up`}>
               <div className={styles.serviceImageCol}>
                 <div className={styles.imageWrapper}>
                   <Image
@@ -111,12 +112,12 @@ export default function PortfolioPage() {
             </div>
           ))}
         </div>
-      </section>
+      </AnimatedSection>
 
-      <section className={styles.portfolioSection}>
+      <AnimatedSection className={styles.portfolioSection}>
         <div className={styles.container}>
           
-          <div className={styles.filterNav}>
+          <div className={`${styles.filterNav} animate-up`}>
             {categories.map((category) => (
               <button 
                 key={category}
@@ -130,7 +131,7 @@ export default function PortfolioPage() {
 
           <div className={styles.grid}>
             {filteredItems.map((item) => (
-              <div key={item.id} className={styles.portfolioCard}>
+              <div key={item.id} className={`${styles.portfolioCard} animate-up`}>
                 <div className={styles.imageWrapper}>
                   <Image
                     src={item.image}
@@ -151,21 +152,27 @@ export default function PortfolioPage() {
           </div>
 
         </div>
-      </section>
+      </AnimatedSection>
 
-      <section className={styles.ctaSection}>
+      <AnimatedSection className={styles.ctaSection}>
         <div className={styles.container}>
           <div className={styles.ctaBox}>
-            <h2 className={styles.ctaTitle}>Ready to transform your space?</h2>
-            <p className={styles.ctaText}>
-              Schedule a consultation with our design team to discuss your vision.
-            </p>
-            <Button variant="filled" href="/contact">
-              BOOK A CONSULTATION
-            </Button>
+            <div className="animate-up">
+              <h2 className={styles.ctaTitle}>Ready to transform your space?</h2>
+            </div>
+            <div className="animate-up">
+              <p className={styles.ctaText}>
+                Schedule a consultation with our design team to discuss your vision.
+              </p>
+            </div>
+            <div className="animate-up">
+              <Button variant="filled" href="/contact">
+                BOOK A CONSULTATION
+              </Button>
+            </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

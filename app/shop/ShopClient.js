@@ -1,5 +1,6 @@
 'use client';
 import PageHeader from '@/components/ui/PageHeader';
+import AnimatedSection from '@/components/ui/AnimatedSection';
 import ProductCard from '@/components/ProductCard/ProductCard';
 import { getAllCategories, getProductsByCategory } from '@/lib/data';
 import { useState, useMemo } from 'react';
@@ -57,10 +58,10 @@ export default function ShopClient() {
         imagePath="/images/stock/luxury-interior.jpg"
       />
 
-      <section className={styles.shopSection}>
+      <AnimatedSection className={styles.shopSection}>
         <div className={styles.container}>
           
-          <div className={styles.controlsToolbar}>
+          <div className={`${styles.controlsToolbar} animate-up`}>
             <div className={styles.searchBox}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8"></circle>
@@ -90,7 +91,7 @@ export default function ShopClient() {
             </div>
           </div>
 
-          <div className={styles.filterNav}>
+          <div className={`${styles.filterNav} animate-up`}>
             {categories.map((category) => (
               <button 
                 key={category}
@@ -103,7 +104,7 @@ export default function ShopClient() {
           </div>
 
           {filteredProducts.length === 0 ? (
-            <div className={styles.noResults}>
+            <div className={`${styles.noResults} animate-up`}>
               <p>No products found matching your criteria.</p>
               <button 
                 className={styles.resetBtn}
@@ -125,7 +126,7 @@ export default function ShopClient() {
           )}
 
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

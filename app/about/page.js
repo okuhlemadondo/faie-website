@@ -1,5 +1,6 @@
 import PageHeader from '@/components/ui/PageHeader';
 import SectionHeading from '@/components/ui/SectionHeading';
+import AnimatedSection from '@/components/ui/AnimatedSection';
 import styles from './page.module.css';
 import Image from 'next/image';
 
@@ -19,29 +20,31 @@ export default function AboutPage() {
         imagePath="/images/stock/luxury-interior.jpg"
       />
 
-      <section className={styles.storySection}>
+      <AnimatedSection className={styles.storySection}>
         <div className={styles.container}>
           <div className={styles.storyTextContainer}>
-            <SectionHeading align="center" subtitle="OUR PHILOSOPHY">
-              Driven by Human Experience
-            </SectionHeading>
+            <div className="animate-up">
+              <SectionHeading align="center" subtitle="OUR PHILOSOPHY">
+                Driven by Human Experience
+              </SectionHeading>
+            </div>
             <div className={styles.storyContent}>
-              <p>
+              <p className="animate-up">
                 Established in 2020, FAIE is a 100% black female-owned and managed multidisciplinary firm providing professional services in the interior design and project management environment. We work comprehensively, driven by human experience, compelling narratives, and a belief in the profound power of beauty—style and substance working in tandem to nurture a well-lived life.
               </p>
-              <p>
+              <p className="animate-up">
                 We collaborate with interior designers, architects, landscape designers, artisans, and craftspeople to provide a full turnkey design solution. Applying traditional building methods and local craft traditions to new construction and furnishings, we specialize in full-scale renovations, efficient spatial planning, and effective project management. We aim to exceed expectations seamlessly, fusing functionality with exquisite finishes beyond aesthetics.
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
-      <section className={styles.founderSection}>
+      <AnimatedSection className={styles.founderSection}>
         <div className={styles.container}>
           <div className={styles.founderGrid}>
             <div className={styles.founderImageColumn}>
-              <div className={styles.founderImageWrapper}>
+              <div className={`${styles.founderImageWrapper} animate-up`}>
                 {/* Placeholder for the founder's image you shared. You can save your image as /public/images/stock/founder.jpg */}
                 <Image 
                   src="/images/stock/founder.png"
@@ -53,44 +56,48 @@ export default function AboutPage() {
               </div>
             </div>
             <div className={styles.founderTextColumn}>
-              <SectionHeading align="left" subtitle="THE FOUNDER">
-                A Passion for Purposeful Design
-              </SectionHeading>
+              <div className="animate-up">
+                <SectionHeading align="left" subtitle="THE FOUNDER">
+                  A Passion for Purposeful Design
+                </SectionHeading>
+              </div>
               <div className={styles.content}>
-                <p>
+                <p className="animate-up">
                   FAIE was founded on the belief that exceptional design should be accessible, personal, and transformative. With a background rooted in architecture, spatial planning, and a deep appreciation for craftsmanship, our founder set out to create a firm that bridges the gap between aspiration and reality.
                 </p>
-                <p>
+                <p className="animate-up">
                   Every project at FAIE begins with a conversation — understanding not just what a space should look like, but how it should feel. This human-centred philosophy is woven into every decision, from the first sketch to the final styling detail.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
 
 
-      <section className={styles.pillarsSection}>
+      <AnimatedSection className={styles.pillarsSection}>
         <div className={styles.container}>
-          <SectionHeading subtitle="THE THREE PILLARS OF FAIE">
-            Where Form, Function, and Beauty Intertwine
-          </SectionHeading>
+          <div className="animate-up">
+            <SectionHeading subtitle="THE THREE PILLARS OF FAIE">
+              Where Form, Function, and Beauty Intertwine
+            </SectionHeading>
+          </div>
           
           <div className={styles.pillarsGrid}>
-            <div className={styles.pillarCard}>
+            <div className={`${styles.pillarCard} animate-up`}>
               <h3 className={`${styles.pillarTitle} tracked-text`}>DESIGN</h3>
               <p className={styles.pillarText}>
                 Thoughtful and intentional solutions that transform ideas into sophisticated living experiences. Every project begins with understanding the client's vision and translating it into a cohesive spatial narrative.
               </p>
             </div>
-            <div className={styles.pillarCard}>
+            <div className={`${styles.pillarCard} animate-up`}>
               <h3 className={`${styles.pillarTitle} tracked-text`}>DETAIL</h3>
               <p className={styles.pillarText}>
                 Luxury is found in the details. From material selection and spatial planning to finishes and styling, every element is carefully considered to achieve excellence.
               </p>
             </div>
-            <div className={styles.pillarCard}>
+            <div className={`${styles.pillarCard} animate-up`}>
               <h3 className={`${styles.pillarTitle} tracked-text`}>ELEGANCE</h3>
               <p className={styles.pillarText}>
                 Timeless, refined, and effortlessly sophisticated. FAIE creates interiors that transcend trends and remain beautiful, functional, and relevant for years to come.
@@ -98,7 +105,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

@@ -13,10 +13,11 @@ export default function ProductCard({ product }) {
   const cardRef = useGsap((root, gsap) => {
     gsap.fromTo(
       root,
-      { y: 40, opacity: 0 },
+      { y: 40, opacity: 0, filter: 'blur(8px)' },
       {
         y: 0,
         opacity: 1,
+        filter: 'blur(0px)',
         duration: 0.8,
         ease: 'power3.out',
         scrollTrigger: {

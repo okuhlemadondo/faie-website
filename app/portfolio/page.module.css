@@ -123,11 +123,24 @@
   }
   
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
   
   .filterNav {
     gap: 20px;
+  }
+
+  .itemTitle {
+    font-size: 16px;
+  }
+
+  .itemCategory {
+    font-size: 10px;
+  }
+
+  .overlay {
+    padding: 20px;
   }
 }
 
