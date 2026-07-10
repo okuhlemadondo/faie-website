@@ -25,7 +25,8 @@
 .logoGroup {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  align-self: flex-start;
   margin-bottom: 24px;
 }
 
@@ -172,6 +173,7 @@
   
   .logoGroup {
     align-items: center;
+    align-self: center;
   }
   
   .newsletterColumn {
